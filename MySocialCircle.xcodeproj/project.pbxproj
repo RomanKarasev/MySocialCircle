@@ -23,6 +23,8 @@
 		74CA08872B10F59600BEDBF3 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA08862B10F59600BEDBF3 /* OneLineTextField.swift */; };
 		74CA08892B10F9F500BEDBF3 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA08882B10F9F500BEDBF3 /* AuthView.swift */; };
 		74CA088B2B10FC6800BEDBF3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA088A2B10FC6700BEDBF3 /* SignUpView.swift */; };
+		74CA088D2B11039700BEDBF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA088C2B11039700BEDBF3 /* LoginViewController.swift */; };
+		74CA088F2B1103E900BEDBF3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA088E2B1103E900BEDBF3 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		74CA08862B10F59600BEDBF3 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		74CA08882B10F9F500BEDBF3 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		74CA088A2B10FC6700BEDBF3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		74CA088C2B11039700BEDBF3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		74CA088E2B1103E900BEDBF3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				7492BE5E2B0FFFBD004AEE05 /* Resources */,
 				74CA08882B10F9F500BEDBF3 /* AuthView.swift */,
 				74CA088A2B10FC6700BEDBF3 /* SignUpView.swift */,
+				74CA088C2B11039700BEDBF3 /* LoginViewController.swift */,
+				74CA088E2B1103E900BEDBF3 /* LoginView.swift */,
 			);
 			path = MySocialCircle;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				74CA08872B10F59600BEDBF3 /* OneLineTextField.swift in Sources */,
 				7492BE6A2B1003D2004AEE05 /* UILabel + Ext.swift in Sources */,
 				7492BE4E2B0FFF34004AEE05 /* AuthViewController.swift in Sources */,
+				74CA088D2B11039700BEDBF3 /* LoginViewController.swift in Sources */,
 				74CA08892B10F9F500BEDBF3 /* AuthView.swift in Sources */,
 				7492BE612B1003A5004AEE05 /* ViewButton + Label.swift in Sources */,
 				7492BE6D2B1003D2004AEE05 /* UIImage + Ext.swift in Sources */,
@@ -212,6 +219,7 @@
 				74CA088B2B10FC6800BEDBF3 /* SignUpView.swift in Sources */,
 				7492BE6E2B1003D2004AEE05 /* UIStackView + Ext.swift in Sources */,
 				7492BE4A2B0FFF34004AEE05 /* AppDelegate.swift in Sources */,
+				74CA088F2B1103E900BEDBF3 /* LoginView.swift in Sources */,
 				7492BE4C2B0FFF34004AEE05 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
