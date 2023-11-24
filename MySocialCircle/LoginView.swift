@@ -34,6 +34,7 @@ class LoginView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setConstraints()
+        googleButton.customizeGoogleButton()
     }
     
     required init?(coder: NSCoder) {
