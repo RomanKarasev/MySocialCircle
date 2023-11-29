@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		748047A02B17A28F00096001 /* MaintabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480479F2B17A28F00096001 /* MaintabBarController.swift */; };
+		748047A22B17A2E600096001 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748047A12B17A2E600096001 /* PeopleViewController.swift */; };
+		748047A42B17A2FC00096001 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748047A32B17A2FC00096001 /* ConversationViewController.swift */; };
 		748588212B111D2A00F72139 /* SegmentedControl + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748588202B111D2A00F72139 /* SegmentedControl + Ext.swift */; };
 		7492BE4A2B0FFF34004AEE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492BE492B0FFF34004AEE05 /* AppDelegate.swift */; };
 		7492BE4C2B0FFF34004AEE05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492BE4B2B0FFF34004AEE05 /* SceneDelegate.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7480479F2B17A28F00096001 /* MaintabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabBarController.swift; sourceTree = "<group>"; };
+		748047A12B17A2E600096001 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		748047A32B17A2FC00096001 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		748588202B111D2A00F72139 /* SegmentedControl + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Ext.swift"; sourceTree = "<group>"; };
 		7492BE462B0FFF34004AEE05 /* MySocialCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySocialCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7492BE492B0FFF34004AEE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7480479E2B179F9500096001 /* SignIn&Auth */ = {
+			isa = PBXGroup;
+			children = (
+				74CA08902B110BD900BEDBF3 /* SetupProfileViewController.swift */,
+				74CA08922B110C0000BEDBF3 /* SetupProfileView.swift */,
+				7492BE4D2B0FFF34004AEE05 /* AuthViewController.swift */,
+				74CA08842B10F07200BEDBF3 /* SignUpViewcontroller.swift */,
+				74CA08882B10F9F500BEDBF3 /* AuthView.swift */,
+				74CA088A2B10FC6700BEDBF3 /* SignUpView.swift */,
+				74CA088C2B11039700BEDBF3 /* LoginViewController.swift */,
+				74CA088E2B1103E900BEDBF3 /* LoginView.swift */,
+			);
+			path = "SignIn&Auth";
+			sourceTree = "<group>";
+		};
 		7492BE3D2B0FFF34004AEE05 = {
 			isa = PBXGroup;
 			children = (
@@ -88,18 +109,11 @@
 		7492BE482B0FFF34004AEE05 /* MySocialCircle */ = {
 			isa = PBXGroup;
 			children = (
-				74CA08942B110C1400BEDBF3 /* New Group */,
-				74CA08902B110BD900BEDBF3 /* SetupProfileViewController.swift */,
-				74CA08922B110C0000BEDBF3 /* SetupProfileView.swift */,
+				74CA08942B110C1400BEDBF3 /* Controllers */,
+				7480479E2B179F9500096001 /* SignIn&Auth */,
 				7492BE5D2B0FFF81004AEE05 /* Application */,
 				7492BE5F2B100381004AEE05 /* Extention */,
-				7492BE4D2B0FFF34004AEE05 /* AuthViewController.swift */,
-				74CA08842B10F07200BEDBF3 /* SignUpViewcontroller.swift */,
 				7492BE5E2B0FFFBD004AEE05 /* Resources */,
-				74CA08882B10F9F500BEDBF3 /* AuthView.swift */,
-				74CA088A2B10FC6700BEDBF3 /* SignUpView.swift */,
-				74CA088C2B11039700BEDBF3 /* LoginViewController.swift */,
-				74CA088E2B1103E900BEDBF3 /* LoginView.swift */,
 			);
 			path = MySocialCircle;
 			sourceTree = "<group>";
@@ -148,11 +162,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		74CA08942B110C1400BEDBF3 /* New Group */ = {
+		74CA08942B110C1400BEDBF3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7480479F2B17A28F00096001 /* MaintabBarController.swift */,
+				748047A12B17A2E600096001 /* PeopleViewController.swift */,
+				748047A32B17A2FC00096001 /* ConversationViewController.swift */,
 			);
-			path = "New Group";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +245,7 @@
 				74CA08872B10F59600BEDBF3 /* OneLineTextField.swift in Sources */,
 				7492BE6A2B1003D2004AEE05 /* UILabel + Ext.swift in Sources */,
 				7492BE4E2B0FFF34004AEE05 /* AuthViewController.swift in Sources */,
+				748047A22B17A2E600096001 /* PeopleViewController.swift in Sources */,
 				74CA088D2B11039700BEDBF3 /* LoginViewController.swift in Sources */,
 				74CA08932B110C0000BEDBF3 /* SetupProfileView.swift in Sources */,
 				74CA08892B10F9F500BEDBF3 /* AuthView.swift in Sources */,
@@ -242,9 +260,11 @@
 				7492BE6C2B1003D2004AEE05 /* UIButton + Ext.swift in Sources */,
 				74CA088B2B10FC6800BEDBF3 /* SignUpView.swift in Sources */,
 				7492BE6E2B1003D2004AEE05 /* UIStackView + Ext.swift in Sources */,
+				748047A02B17A28F00096001 /* MaintabBarController.swift in Sources */,
 				7492BE4A2B0FFF34004AEE05 /* AppDelegate.swift in Sources */,
 				74CA088F2B1103E900BEDBF3 /* LoginView.swift in Sources */,
 				7492BE4C2B0FFF34004AEE05 /* SceneDelegate.swift in Sources */,
+				748047A42B17A2FC00096001 /* ConversationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
