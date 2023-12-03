@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1FF43D255BDA6590FAB467 /* Pods_MySocialCircle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB288798DD64A9BBB34B307 /* Pods_MySocialCircle.framework */; };
 		742778BF2B19134F00A942C9 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 742778BD2B19134F00A942C9 /* activeChats.json */; };
 		742778C02B19134F00A942C9 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 742778BE2B19134F00A942C9 /* waitingChats.json */; };
 		742778C22B19143A00A942C9 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742778C12B19143A00A942C9 /* Bundle-Decodable.swift */; };
@@ -27,6 +28,7 @@
 		7449ED932B1CD63C0053C27A /* BaseProfileAndChatRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449ED922B1CD63C0053C27A /* BaseProfileAndChatRequestView.swift */; };
 		7449ED952B1CD88E0053C27A /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449ED942B1CD88E0053C27A /* ChatRequestViewController.swift */; };
 		7449ED972B1CD8FC0053C27A /* ChatRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7449ED962B1CD8FC0053C27A /* ChatRequestView.swift */; };
+		7449ED992B1CEA120053C27A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7449ED982B1CEA110053C27A /* GoogleService-Info.plist */; };
 		748047A02B17A28F00096001 /* MaintabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480479F2B17A28F00096001 /* MaintabBarController.swift */; };
 		748047A22B17A2E600096001 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748047A12B17A2E600096001 /* PeopleViewController.swift */; };
 		748047A42B17A2FC00096001 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748047A32B17A2FC00096001 /* ConversationViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB288798DD64A9BBB34B307 /* Pods_MySocialCircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocialCircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B57AE4768BAC59A961BA4D9 /* Pods-MySocialCircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocialCircle.release.xcconfig"; path = "Target Support Files/Pods-MySocialCircle/Pods-MySocialCircle.release.xcconfig"; sourceTree = "<group>"; };
 		742778BD2B19134F00A942C9 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		742778BE2B19134F00A942C9 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		742778C12B19143A00A942C9 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		7449ED922B1CD63C0053C27A /* BaseProfileAndChatRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProfileAndChatRequestView.swift; sourceTree = "<group>"; };
 		7449ED942B1CD88E0053C27A /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 		7449ED962B1CD8FC0053C27A /* ChatRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestView.swift; sourceTree = "<group>"; };
+		7449ED982B1CEA110053C27A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7480479F2B17A28F00096001 /* MaintabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabBarController.swift; sourceTree = "<group>"; };
 		748047A12B17A2E600096001 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		748047A32B17A2FC00096001 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		74CA08902B110BD900BEDBF3 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		74CA08922B110C0000BEDBF3 /* SetupProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileView.swift; sourceTree = "<group>"; };
 		74CA08952B110C2F00BEDBF3 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		CAE1F9D4E750039BD60138D7 /* Pods-MySocialCircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocialCircle.debug.xcconfig"; path = "Target Support Files/Pods-MySocialCircle/Pods-MySocialCircle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +115,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1FF43D255BDA6590FAB467 /* Pods_MySocialCircle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4AFEA96911EEC7EAF1BA8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1F9D4E750039BD60138D7 /* Pods-MySocialCircle.debug.xcconfig */,
+				6B57AE4768BAC59A961BA4D9 /* Pods-MySocialCircle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		742778CB2B19271800A942C9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +196,8 @@
 			children = (
 				7492BE482B0FFF34004AEE05 /* MySocialCircle */,
 				7492BE472B0FFF34004AEE05 /* Products */,
+				6F4AFEA96911EEC7EAF1BA8D /* Pods */,
+				969AA4077AA95458BEF3C193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +241,7 @@
 				7492BE522B0FFF36004AEE05 /* Assets.xcassets */,
 				7492BE542B0FFF36004AEE05 /* LaunchScreen.storyboard */,
 				7492BE572B0FFF36004AEE05 /* Info.plist */,
+				7449ED982B1CEA110053C27A /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -272,6 +291,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		969AA4077AA95458BEF3C193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BB288798DD64A9BBB34B307 /* Pods_MySocialCircle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7492BE5A2B0FFF36004AEE05 /* Build configuration list for PBXNativeTarget "MySocialCircle" */;
 			buildPhases = (
+				110E3A3C9400A11EFD72C5C4 /* [CP] Check Pods Manifest.lock */,
 				7492BE422B0FFF34004AEE05 /* Sources */,
 				7492BE432B0FFF34004AEE05 /* Frameworks */,
 				7492BE442B0FFF34004AEE05 /* Resources */,
+				38AFD60776440B14FB100204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,10 +364,53 @@
 				742778BF2B19134F00A942C9 /* activeChats.json in Resources */,
 				7492BE532B0FFF36004AEE05 /* Assets.xcassets in Resources */,
 				742778C02B19134F00A942C9 /* waitingChats.json in Resources */,
+				7449ED992B1CEA120053C27A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110E3A3C9400A11EFD72C5C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySocialCircle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38AFD60776440B14FB100204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySocialCircle/Pods-MySocialCircle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySocialCircle/Pods-MySocialCircle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySocialCircle/Pods-MySocialCircle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7492BE422B0FFF34004AEE05 /* Sources */ = {
@@ -439,7 +511,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,7 +574,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -523,6 +595,7 @@
 		};
 		7492BE5B2B0FFF36004AEE05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE1F9D4E750039BD60138D7 /* Pods-MySocialCircle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -550,6 +623,7 @@
 		};
 		7492BE5C2B0FFF36004AEE05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B57AE4768BAC59A961BA4D9 /* Pods-MySocialCircle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

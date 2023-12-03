@@ -1,0 +1,6 @@
+framework module Pods_MySocialCircle {
+  umbrella header "Pods-MySocialCircle-umbrella.h"
+
+  export *
+  module * { export * }
+}
