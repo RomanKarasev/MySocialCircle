@@ -7,21 +7,6 @@
 
 import UIKit
 
-struct MChat: Hashable, Decodable {
-    var username: String
-    var userImageString: String
-    var lastMessage: String
-    var id: Int
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    static func == (lhs: MChat, rhs: MChat) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-
 // MARK: - ConversationViewController
 
 class ConversationViewController: UIViewController {
@@ -99,11 +84,11 @@ class ConversationViewController: UIViewController {
 // MARK: - Data Source
 extension ConversationViewController {
     
-    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else { fatalError("Unable to dequeue \(cellType)") }
-        cell.configure(with: value)
-        return cell
-    }
+//    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else { fatalError("Unable to dequeue \(cellType)") }
+//        cell.configure(with: value)
+//        return cell
+//    }
     
     private func createDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell? in
@@ -113,9 +98,9 @@ extension ConversationViewController {
             
             switch section {
             case .activeChats:
-                return self.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: ActiveChatCell.self, with: chat, for: indexPath)
             case .waitingChats:
-                return self.configure(cellType: WaitingChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: WaitingChatCell.self, with: chat, for: indexPath)
             }
         })
         
@@ -127,7 +112,7 @@ extension ConversationViewController {
             
             sectionHeader.configure(text: section.description(),
                                     font: .laoSangamMN20(),
-                                    textColor: .cyan)
+                                    textColor: #colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1))
             return sectionHeader
             
         }
