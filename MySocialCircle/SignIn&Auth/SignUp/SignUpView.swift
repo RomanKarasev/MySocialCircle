@@ -11,23 +11,23 @@ import UIKit
 class SignUpView: UIView {
     
     
-    let welcomeLabel = UILabel(text: "Good to see you!", font: .avenir26())
+    let welcomeLabel = UILabel(text: "Good to see you!", font: .openSansReg26())
     
     let emailLabel = UILabel(text: "Email")
     let passwordLabel = UILabel(text: "Password")
     let confirmPasswodLabel = UILabel(text: "Confirm password")
     let alreadyOnboardLabel = UILabel(text: "Already onboard?")
     
-    let emailTextField = OneLineTextField(font: .avenir20())
-    let passwordTextField = OneLineTextField(font: .avenir20())
-    let confirmPasswordTextField = OneLineTextField(font: .avenir20())
+    let emailTextField = OneLineTextField(font: .openSansReg20())
+    let passwordTextField = OneLineTextField(font: .openSansReg20())
+    let confirmPasswordTextField = OneLineTextField(font: .openSansReg20())
     
     let signUpButton = UIButton(title: "Sign Up", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)
     let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
-        button.titleLabel?.font = .avenir20()
+        button.titleLabel?.font = .openSansReg20()
         return button
     }()
     

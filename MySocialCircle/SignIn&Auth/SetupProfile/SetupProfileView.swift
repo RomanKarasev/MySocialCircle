@@ -10,18 +10,17 @@ import UIKit
 
 class SetupProfileView: UIView {
     
-    let fillImageView = AddPhotoView()
-    
-    let welcomeLabel = UILabel(text: "Set up profile!", font: .avenir26())
-    
     let fullImageView = AddPhotoView()
+    
+    let welcomeLabel = UILabel(text: "Set up profile!", font: .openSansReg26())
+    
     
     let fullNameLabel = UILabel(text: "Full name")
     let aboutmeLabel = UILabel(text: "About me")
     let sexLabel = UILabel(text: "Sex")
     
-    let fullNameTextField = OneLineTextField(font: .avenir20())
-    let aboutMeTextField = OneLineTextField(font: .avenir20())
+    let fullNameTextField = OneLineTextField(font: .openSansReg20())
+    let aboutMeTextField = OneLineTextField(font: .openSansReg20())
     let sexSegmentedControl = UISegmentedControl(first: "Male", second: "Femail")
     
     let goToChatsButton = UIButton(title: "Go to chats!", titleColor: .white, backgroundColor: .buttonDark(), cornerRadius: 4)

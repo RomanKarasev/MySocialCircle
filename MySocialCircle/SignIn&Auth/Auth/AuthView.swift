@@ -54,9 +54,11 @@ class AuthView: UIView {
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: topAnchor, constant: 160),
             logoImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            logoImageView.heightAnchor.constraint(equalToConstant: 200),
+            logoImageView.widthAnchor.constraint(equalToConstant: 320),
             
             
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -40)
             ])

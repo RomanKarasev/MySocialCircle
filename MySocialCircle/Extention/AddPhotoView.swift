@@ -32,13 +32,14 @@ class AddPhotoView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        addSubview(circleImageView)
-        addSubview(plusButton)
         setupConstraints()
     }
     
     private func setupConstraints() {
+        
+        addSubview(circleImageView)
+        addSubview(plusButton)
+        
         NSLayoutConstraint.activate([
             circleImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             circleImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),

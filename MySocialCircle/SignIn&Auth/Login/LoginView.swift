@@ -10,21 +10,21 @@ import UIKit
 
 class LoginView: UIView {
     
-    let welcomeLabel = UILabel(text: "Welcome back!", font: .avenir26())
+    let welcomeLabel = UILabel(text: "Welcome back!", font: .openSansReg26())
     
     let loginWithLabel = UILabel(text: "Login with")
     let emailLabel = UILabel(text: "Email")
     let passwordLabel = UILabel(text: "Password")
     let needAnAccountLabel = UILabel(text: "Need an account?")
     
-    let emailTextField = OneLineTextField(font: .avenir20())
-    let passwordTextField = OneLineTextField(font: .avenir20())
+    let emailTextField = OneLineTextField(font: .openSansReg20())
+    let passwordTextField = OneLineTextField(font: .openSansReg20())
     let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .buttonDark())
     let signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
-        button.titleLabel?.font = .avenir20()
+        button.titleLabel?.font = .openSansReg20()
         return button
     }()
     

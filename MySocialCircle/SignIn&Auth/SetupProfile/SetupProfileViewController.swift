@@ -39,6 +39,8 @@ class SetupProfileViewController: UIViewController {
     private func addTargetToButtons() {
         
         setupProfileView.goToChatsButton.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
+        
+        setupProfileView.fullImageView.plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -46,12 +48,20 @@ class SetupProfileViewController: UIViewController {
 
 @objc private extension SetupProfileViewController {
     
+    
+    func plusButtonTapped() {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true)
+    }
+    
     func goToChatsButtonTapped() {
         FirestoreService.shared.saveProfileWith(
             id: currentUser.uid,
             email: currentUser.email!,
             username: setupProfileView.fullNameTextField.text,
-            avatarImageString: "",
+            avatarImage: setupProfileView.fullImageView.circleImageView.image,
             description: setupProfileView.aboutMeTextField.text,
             sex: setupProfileView.sexSegmentedControl.titleForSegment(at: setupProfileView.sexSegmentedControl.selectedSegmentIndex)) { (result) in
                 switch result {
@@ -68,6 +78,18 @@ class SetupProfileViewController: UIViewController {
                 }
             }
     }
+}
+
+extension SetupProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker.dismiss(animated: true)
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        
+        setupProfileView.fullImageView.circleImageView.image = image
+    }
+    
 }
 
 

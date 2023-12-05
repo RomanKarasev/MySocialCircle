@@ -8,8 +8,6 @@
 
 
 import UIKit
-import FirebaseCore
-import FirebaseAuth
 
 class AuthViewController: UIViewController {
     
@@ -68,8 +66,6 @@ extension AuthViewController: AuthNavigationDelegate {
 // MARK: - import SwiftUI
 
 import SwiftUI
-import FirebaseCore
-import FirebaseAuth
 
 struct AuthVCProvider: PreviewProvider {
     

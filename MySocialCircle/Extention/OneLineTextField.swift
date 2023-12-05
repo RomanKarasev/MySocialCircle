@@ -9,7 +9,7 @@ import UIKit
 
 class OneLineTextField: UITextField {
     
-    convenience init(font: UIFont? = .avenir20()) {
+    convenience init(font: UIFont? = .openSansReg20()) {
         self.init()
         
         self.font = font

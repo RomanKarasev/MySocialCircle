@@ -9,7 +9,6 @@ target 'MySocialCircle' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
-pod 'GoogleSignIn'
-pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
 
 end

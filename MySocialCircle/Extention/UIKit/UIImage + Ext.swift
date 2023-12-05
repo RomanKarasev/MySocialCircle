@@ -1,26 +1,33 @@
 //
 //  UIImage + Ext.swift
-//  MyMessage
+//  MySocialCircle
 //
-//  Created by Роман Карасёв on 23.11.2023.
+//  Created by Роман Карасёв on 05.12.2023.
 //
 
 import UIKit
 
-extension UIImageView {
+
+extension UIImage {
     
-    convenience init(image: UIImage?, 
-                     contentMode: UIView.ContentMode) {
-        self.init()
-        
-        self.image = image
-        self.contentMode = contentMode
+    var scaledToSafeUploadSize: UIImage? {
+      let maxImageSideLength: CGFloat = 480
+      
+      let largerSide: CGFloat = max(size.width, size.height)
+      let ratioScale: CGFloat = largerSide > maxImageSideLength ? largerSide / maxImageSideLength : 1
+      let newImageSize = CGSize(width: size.width / ratioScale, height: size.height / ratioScale)
+      
+      return image(scaledTo: newImageSize)
     }
     
-    func setupColor(color: UIColor) {
-        let templateImage = self.image?.withRenderingMode(.alwaysTemplate)
-        self.image = templateImage
-        self.tintColor = color
+    func image(scaledTo size: CGSize) -> UIImage? {
+      defer {
+        UIGraphicsEndImageContext()
       }
+      
+      UIGraphicsBeginImageContextWithOptions(size, true, 0)
+      draw(in: CGRect(origin: .zero, size: size))
 
+      return UIGraphicsGetImageFromCurrentImageContext()
+    }
 }
